@@ -15,18 +15,37 @@ const storeUrls = {
   android: "https://play.google.com/store/apps/details?id=com.myapp",
 };
 
-// Deep link URL
-const deepLinkUrl = "trainhub://user/2YDCfnyziBdnKME2LM7uDrZqfbI2";
+// Get URL parameters
+function getUrlParams() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return {
+    userId: urlParams.get("u"),
+  };
+}
+
+// Build deep link URL
+function buildDeepLink() {
+  const params = getUrlParams();
+  let deepLink = "trainhub://";
+
+  if (params.userId) {
+    deepLink += `user/${params.userId}`;
+  }
+
+  return deepLink;
+}
 
 // Open app function
 function openApp() {
   const platform = getPlatform();
   const loading = document.getElementById("loading");
+  const deepLinkUrl = buildDeepLink();
 
   // Show loading state
   loading.classList.add("show");
 
   // Open deep link immediately
+
   window.location.href = deepLinkUrl;
 
   // Set timeout for fallback to app store after 2500ms
