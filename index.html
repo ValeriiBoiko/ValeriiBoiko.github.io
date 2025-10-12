@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrainHub - Continue to MyApp</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: #121212;
+        color: #c9c4bc;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        overflow-x: hidden;
+      }
+
+      .container {
+        background: #252525;
+        border-radius: 16px;
+        padding: 48px 32px;
+        text-align: center;
+        max-width: 450px;
+        width: 100%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        border: 1px solid #585858;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #ec920a, #d2943c);
+        border-radius: 20px;
+        margin: 0 auto 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+        box-shadow: 0 8px 16px rgba(236, 146, 10, 0.3);
+      }
+
+      .app-name {
+        font-size: 28px;
+        font-weight: 700;
+        color: #f2f2f2;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+      }
+
+      .btn {
+        flex: 1;
+        padding: 16px 0;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn-primary {
+        background: #ec920a;
+        color: #000;
+        border-color: #ec920a;
+      }
+
+      .btn-primary:hover {
+        background: #d2943c;
+        border-color: #d2943c;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(236, 146, 10, 0.4);
+      }
+
+      .btn-secondary {
+        background: #3d3d3d;
+        color: #ec920a;
+      }
+
+      .btn-secondary:hover {
+        background: rgba(236, 146, 10, 0.1);
+        /* border-color: #d2943c; */
+        color: #d2943c;
+        transform: translateY(-2px);
+      }
+
+      .screenshot-placeholder {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #161616, #252525);
+        border-radius: 12px;
+        margin: 32px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #585858;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .screenshot-placeholder::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(236, 146, 10, 0.1),
+          transparent
+        );
+        animation: shimmer 2s infinite;
+      }
+
+      .screenshot-placeholder .phone-mockup {
+        width: 120px;
+        height: 160px;
+        background: #000;
+        border-radius: 20px;
+        border: 3px solid #585858;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #979797;
+        font-size: 14px;
+      }
+
+      .screenshot-placeholder .phone-mockup::before {
+        content: "📱";
+        font-size: 32px;
+      }
+
+      .features {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 16px 8px;
+        background: #161616;
+        border-radius: 8px;
+        border: 1px solid #585858;
+      }
+
+      .feature-icon {
+        font-size: 20px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .feature-text {
+        font-size: 12px;
+        color: #979797;
+        font-weight: 500;
+      }
+
+      .loading {
+        display: none;
+        margin-top: 16px;
+        color: #979797;
+        font-size: 14px;
+      }
+
+      .loading.show {
+        display: block;
+      }
+
+      .spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #585858;
+        border-radius: 50%;
+        border-top-color: #ec920a;
+        animation: spin 1s linear infinite;
+        margin-right: 8px;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 32px 24px;
+          margin: 16px;
+        }
+
+        .app-name {
+          font-size: 24px;
+        }
+
+        .tagline {
+          font-size: 14px;
+        }
+
+        .btn {
+          padding: 14px 20px;
+          font-size: 15px;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .screenshot-placeholder {
+          height: 160px;
+        }
+
+        .screenshot-placeholder .phone-mockup {
+          width: 100px;
+          height: 140px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .container {
+          padding: 24px 20px;
+        }
+
+        .logo {
+          width: 64px;
+          height: 64px;
+          font-size: 24px;
+        }
+
+        .app-name {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">T</div>
+      <h1 class="app-name">TrainHub</h1>
+
+      <div class="screenshot-placeholder">
+        <div class="phone-mockup"></div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-secondary" onclick="downloadApp()">
+          Download
+        </button>
+        <button class="btn btn-primary" onclick="openApp()">Open App</button>
+      </div>
+
+      <div class="loading" id="loading">
+        <span class="spinner"></span>
+        Redirecting to app store...
+      </div>
+    </div>
+
+    <script>
+      // Platform detection
+      function getPlatform() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        if (/iphone|ipad|ipod/.test(userAgent)) {
+          return "ios";
+        } else if (/android/.test(userAgent)) {
+          return "android";
+        }
+        return "unknown";
+      }
+
+      // App store URLs
+      const storeUrls = {
+        ios: "https://apps.apple.com/app/id123456789",
+        android: "https://play.google.com/store/apps/details?id=com.myapp",
+      };
+
+      // Deep link URL
+      const deepLinkUrl = "myapp://home";
+
+      // Open app function
+      function openApp() {
+        const platform = getPlatform();
+        const loading = document.getElementById("loading");
+
+        // Show loading state
+        loading.classList.add("show");
+
+        // Create iframe for deep link attempt
+        const iframe = document.createElement("iframe");
+        iframe.style.display = "none";
+        iframe.src = deepLinkUrl;
+        document.body.appendChild(iframe);
+
+        // Set timeout for fallback to app store
+        setTimeout(() => {
+          loading.classList.remove("show");
+          if (platform === "ios" || platform === "android") {
+            window.location.href = storeUrls[platform];
+          } else {
+            // For unknown platforms, try the deep link anyway
+            window.location.href = deepLinkUrl;
+          }
+        }, 2000);
+
+        // Clean up iframe after a short delay
+        setTimeout(() => {
+          if (iframe.parentNode) {
+            iframe.parentNode.removeChild(iframe);
+          }
+        }, 1000);
+      }
+
+      // Download app function
+      function downloadApp() {
+        const platform = getPlatform();
+        if (platform === "ios" || platform === "android") {
+          window.location.href = storeUrls[platform];
+        } else {
+          // For unknown platforms, show both options or default to a general page
+          const choice = confirm(
+            "Choose your platform:\nOK for iOS\nCancel for Android"
+          );
+          if (choice) {
+            window.location.href = storeUrls.ios;
+          } else {
+            window.location.href = storeUrls.android;
+          }
+        }
+      }
+
+      // Add some interactive effects
+      document.addEventListener("DOMContentLoaded", function () {
+        // Add hover effects to buttons
+        const buttons = document.querySelectorAll(".btn");
+        buttons.forEach((button) => {
+          button.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-2px)";
+          });
+
+          button.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
+        });
+
+        // Add click animation
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            this.style.transform = "translateY(0) scale(0.98)";
+            setTimeout(() => {
+              this.style.transform = "translateY(-2px) scale(1)";
+            }, 100);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
