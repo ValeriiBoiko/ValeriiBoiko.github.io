@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: #121212;
+  color: #c9c4bc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  background: #252525;
+  border-radius: 16px;
+  padding: 48px 32px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid #585858;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(236, 146, 10, 0.3);
+}
+
+.logo img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.app-name {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-name img {
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #979797;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.download-section {
+  margin-bottom: 32px;
+}
+
+.open-section {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #c9c4bc;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.store-btn {
+  background: #373737;
+  border: 0 solid #585858;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-btn:hover {
+  border-color: #ec920a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 146, 10, 0.2);
+}
+
+.store-btn img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.open-btn {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn {
+  flex: 1;
+  padding: 16px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #ec920a;
+  color: #000;
+  border-color: #ec920a;
+}
+
+.btn-primary:hover {
+  background: #d2943c;
+  border-color: #d2943c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(236, 146, 10, 0.4);
+}
+
+.btn-secondary {
+  background: #3d3d3d;
+  color: #ec920a;
+}
+
+.btn-secondary:hover {
+  background: rgba(236, 146, 10, 0.1);
+  /* border-color: #d2943c; */
+  color: #d2943c;
+  transform: translateY(-2px);
+}
+
+.features {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.feature {
+  text-align: center;
+  padding: 16px 8px;
+  background: #161616;
+  border-radius: 8px;
+  border: 1px solid #585858;
+}
+
+.feature-icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.feature-text {
+  font-size: 12px;
+  color: #979797;
+  font-weight: 500;
+}
+
+.loading {
+  display: none;
+  margin-top: 16px;
+  color: #979797;
+  font-size: 14px;
+}
+
+.loading.show {
+  display: block;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #585858;
+  border-radius: 50%;
+  border-top-color: #ec920a;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 32px 24px;
+    margin: 16px;
+  }
+
+  .app-name {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .store-btn {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .store-btn img {
+    height: 35px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .screenshot-placeholder {
+    height: 160px;
+  }
+
+  .screenshot-placeholder .phone-mockup {
+    width: 100px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 24px 20px;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+  }
+
+  .app-name {
+    font-size: 20px;
+  }
+}
