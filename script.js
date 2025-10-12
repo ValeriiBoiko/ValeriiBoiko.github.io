@@ -49,16 +49,6 @@ function openApp() {
   window.location.href = deepLinkUrl;
 
   // Set timeout for fallback to app store after 2500ms
-  setTimeout(() => {
-    loading.classList.remove("show");
-
-    if (platform === "ios" || platform === "android") {
-      window.location.href = storeUrls[platform];
-    } else {
-      // For unknown platforms, try the deep link anyway
-      window.location.href = storeUrls.ios;
-    }
-  }, 2500);
 }
 
 // Download from specific store function
