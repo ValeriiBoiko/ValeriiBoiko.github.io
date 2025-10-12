@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "ZQ6Q8H2H2X.com.vboiko.trainhub",
+        "paths": [
+          "NOT /privacy-policy",
+          "NOT /terms",
+          "*"
+        ]
+      }
+    ]
+  }
+}
