@@ -7,39 +7,19 @@
   <title>TrainHub - Privacy Policty</title>
 
   <style>
+    body {
+      display: flex;
+      justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2rem;
+    }
+
     [data-custom-class='body'],
     [data-custom-class='body'] * {
       background: transparent;
       color: #595959;
       font-family: Arial;
-    }
-
-    [data-custom-class='title'],
-    [data-custom-class='title'] * {
-      font-family: Arial !important;
-      font-size: 26px !important;
-      color: #000000 !important;
-    }
-
-    [data-custom-class='subtitle'],
-    [data-custom-class='subtitle'] * {
-      font-family: Arial !important;
-      color: #595959 !important;
-      font-size: 14px !important;
-    }
-
-    [data-custom-class='heading_1'],
-    [data-custom-class='heading_1'] * {
-      font-family: Arial !important;
-      font-size: 19px !important;
-      color: #000000 !important;
-    }
-
-    [data-custom-class='heading_2'],
-    [data-custom-class='heading_2'] * {
-      font-family: Arial !important;
-      font-size: 17px !important;
-      color: #000000 !important;
     }
 
     [data-custom-class='body_text'],
@@ -51,7 +31,7 @@
 
     [data-custom-class='link'],
     [data-custom-class='link'] * {
-      color: #3030F1 !important;
+      color: #ea5b19 !important;
       font-size: 14px !important;
       font-family: Arial !important;
       word-break: break-word !important;
@@ -72,20 +52,53 @@
     ol li {
       font-family: Arial;
     }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 4rem;
+    }
+
+    .logo {
+      height: 5rem;
+      margin-bottom: -0.4rem;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        margin-bottom: 0.4rem;
+      }
+    }
   </style>
 </head>
 
-<body style="display: flex; justify-content: center; padding-left: 5%; padding-right: 5%">
+<body>
   <main style="max-width: 21cm;">
 
     <div data-custom-class="body">
-      <div>
-        <h1>PRIVACY POLICY</h1>
+      <div class="header">
+        <div class="header-content">
+          <h1>PRIVACY POLICY</h1>
+
+          <div> <strong> Last updated: October 26, 2025 </strong> </div>
+        </div>
+
+        <img src="./logo.png" alt="TrainHub Logo" class="logo" />
       </div>
-      <div> <strong> Last updated October 26, 2025 </strong> </div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
+
+
       <div style="line-height: 1.5;"> This Privacy Notice for Valerii Boiko ( " <strong>we </strong>," " <strong>us
         </strong>," or " <strong>our </strong>" ), describes how and why we might access, collect, store, use, and/or
         share ( " <strong>process </strong>" ) your personal information when you use our services ( " <strong>Services
