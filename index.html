@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TrainHub - Continue to MyApp</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">
-        <img src="./images/app-icon.png" alt="TrainHub Logo" />
-      </div>
-      <h1 class="app-name">
-        <img src="./images/logo.png" alt="TrainHub" />
-      </h1>
-      <p class="tagline">
-        A smarter way for trainers and clients to work together — plan, track,
-        and grow as a team
-      </p>
 
-      <div class="download-section">
-        <h3 class="section-title">Download the app</h3>
-        <div class="store-buttons">
-          <button class="store-btn" onclick="downloadFromStore('ios')">
-            <img src="./images/apps-store-logo.png" alt="App Store" />
-          </button>
-          <button class="store-btn" onclick="downloadFromStore('android')">
-            <img src="./images/play-store-logo.png" alt="Google Play Store" />
-          </button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrainHub - Continue to MyApp</title>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      <div class="open-section">
-        <h3 class="section-title">Already have the app?</h3>
-        <button class="btn btn-primary open-btn" onclick="openApp()">
-          Open It!
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./images/app-icon.png" alt="TrainHub Logo" />
+    </div>
+    <h1 class="app-name">
+      <img src="./images/logo.png" alt="TrainHub" />
+    </h1>
+    <p class="tagline">
+      A smarter way for trainers and clients to work together — plan, track,
+      and grow as a team
+    </p>
+
+    <div class="download-section">
+      <h3 class="section-title">Download the app</h3>
+      <div class="store-buttons">
+        <button class="store-btn" onclick="downloadFromStore('ios')">
+          <img src="./images/apps-store-logo.png" alt="App Store" />
         </button>
-      </div>
-      <!--  -->
-
-      <div class="loading" id="loading">
-        <span class="spinner"></span>
-        Redirecting to app store...
+        <button class="store-btn" onclick="downloadFromStore('android')">
+          <img src="./images/play-store-logo.png" alt="Google Play Store" />
+        </button>
       </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="open-section">
+      <h3 class="section-title">Already have the app?</h3>
+      <button class="btn btn-primary open-btn" onclick="openApp()">
+        Open It!
+      </button>
+    </div>
+    <!--  -->
+
+    <div class="loading" id="loading">
+      <span class="spinner"></span>
+      Redirecting to app store...
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
