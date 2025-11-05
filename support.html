@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrainHub Support - Help & Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #121212;
+            color: #c9c4bc;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .logo-container {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(236, 146, 10, 0.3);
+            background: #252525;
+            border: 1px solid #585858;
+        }
+
+        .logo-container img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #c9c4bc;
+            margin-bottom: 8px;
+        }
+
+        /* Sections */
+        .section {
+            background: #252525;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+
+        .section:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .section:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .section:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .section:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #c9c4bc;
+            margin-bottom: 16px;
+        }
+
+        .section p {
+            font-size: 16px;
+            color: #979797;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Email Link */
+        .email-link {
+            color: #ec920a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #d2943c;
+            text-decoration: underline;
+        }
+
+        /* Links Section */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .link-card {
+            border: 2px solid #3d3d3d;
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: #c9c4bc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .link-card:hover {
+            border-color: #ec920a;
+            background: rgba(236, 146, 10, 0.1);
+            color: #ec920a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(236, 146, 10, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #585858;
+            color: #979797;
+            font-size: 14px;
+            animation: fadeInUp 0.6s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 0;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .section {
+                padding: 24px;
+                margin-bottom: 20px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 15px;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .link-card {
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            .logo-container {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 16px;
+            }
+
+            .container {
+                padding: 16px 0;
+            }
+
+            .header {
+                margin-bottom: 32px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .section p {
+                font-size: 14px;
+            }
+
+            .footer {
+                font-size: 12px;
+                margin-top: 32px;
+                padding-top: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="./images/app-icon.png" alt="TrainHub Logo" />
+            </div>
+            <h1>TrainHub Support</h1>
+        </header>
+
+        <!-- Intro Section -->
+        <section class="section">
+            <p>
+                Welcome to the TrainHub Support page. If you have any issues with the
+                app or need help, you can reach us anytime at
+                <a href="mailto:support@thapp.pro" class="email-link">support@thapp.pro</a>.
+            </p>
+        </section>
+
+        <!-- Support Info Section -->
+        <section class="section">
+            <h2>Getting Help</h2>
+            <p>
+                Before reporting bugs, please make sure you're using the latest version of the app.
+                Updates often include important fixes and performance improvements.
+            </p>
+            <p>
+                If the issue persists, try reinstalling the app — in many cases, this resolves problems caused by cached
+                data.
+            </p>
+            <p>
+                We usually respond within 24–48 hours. Thank you for your patience and
+                for using TrainHub!
+            </p>
+        </section>
+
+        <!-- Links Section -->
+        <section class="section">
+            <h2>Legal & Policies</h2>
+            <div class="links-grid">
+                <a href="https://thapp.pro/privacy" class="link-card">Privacy Policy</a>
+                <a href="https://thapp.pro/terms" class="link-card">Terms of Use</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> TrainHub: Workout & Calorie. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+</body>
+
+</html>

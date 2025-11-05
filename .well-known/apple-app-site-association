@@ -7,7 +7,6 @@
         "paths": [
           "NOT /terms",
           "NOT /privacy-policy",
-          "NOT /allowed/*",
           "*"
         ]
       }
