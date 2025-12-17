@@ -93,6 +93,10 @@
             animation-delay: 0.4s;
         }
 
+        .section:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
         .section h2 {
             font-size: 24px;
             font-weight: 600;
@@ -109,6 +113,110 @@
 
         .section p:last-child {
             margin-bottom: 0;
+        }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border-bottom: 1px solid #363636;
+            margin-bottom: 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 20px 0;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #c9c4bc;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #ec920a;
+        }
+
+        .faq-question.active {
+            color: #ec920a;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: currentColor;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 0;
+        }
+
+        .faq-answer.active {
+            max-height: 1000px;
+            padding: 0 0 20px 0;
+        }
+
+        .faq-answer-content {
+            color: #979797;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .faq-answer-content ol,
+        .faq-answer-content ul {
+            margin-left: 20px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer-content li {
+            margin-bottom: 8px;
+        }
+
+        .faq-answer-content li:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-warning {
+            background: rgba(236, 146, 10, 0.1);
+            border: 2px solid #ec920a;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        .faq-warning p {
+            color: #ec920a;
+            margin: 0;
+            font-weight: 500;
+            font-size: 14px;
         }
 
         /* Email Link */
@@ -205,6 +313,15 @@
                 font-size: 15px;
             }
 
+            .faq-question {
+                font-size: 15px;
+                padding: 16px 0;
+            }
+
+            .faq-answer-content {
+                font-size: 15px;
+            }
+
             .links-grid {
                 grid-template-columns: 1fr;
             }
@@ -248,6 +365,23 @@
 
             .section p {
                 font-size: 14px;
+            }
+
+            .faq-question {
+                font-size: 14px;
+                padding: 14px 0;
+            }
+
+            .faq-answer-content {
+                font-size: 14px;
+            }
+
+            .faq-warning {
+                padding: 12px;
+            }
+
+            .faq-warning p {
+                font-size: 13px;
             }
 
             .footer {
@@ -295,6 +429,39 @@
             </p>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I delete my account?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>To delete your TrainHub account, follow these steps OR email us at <a href="mailto:support@thapp.pro" class="email-link">support@thapp.pro</a>:</p>
+                            <ol>
+                                <li>Open the TrainHub app on your device and log in to your account.</li>
+                                <li>Navigate to the Settings screen. You can usually find this by tapping on your profile icon in the app.</li>
+                                <li>Scroll down to find the "Delete Account" option in the Settings menu.</li>
+                                <li>Tap on "Delete Account" and confirm your decision when prompted.</li>
+                                <li>Your account and all associated data will be permanently deleted. This process may take a few moments to complete.</li>
+                            </ol>
+                            <div class="faq-warning">
+                                <p>⚠️ Warning: Deleting your account will permanently remove all your data including workouts, progress tracking, body metrics, and any other information associated with your account. This action cannot be undone.</p>
+                            </div>
+                            <p style="margin-top: 16px;">After you delete your account, all your personal information will be permanently removed from our systems within 14 days, in accordance with our Privacy Policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Links Section -->
         <section class="section">
             <h2>Legal & Policies</h2>
@@ -314,6 +481,34 @@
         // Set current year in footer
         document.getElementById("current-year").textContent =
             new Date().getFullYear();
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const isActive = question.classList.contains('active');
+                const answer = question.nextElementSibling;
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-question').forEach(q => {
+                    if (q !== question) {
+                        q.classList.remove('active');
+                        q.setAttribute('aria-expanded', 'false');
+                        q.nextElementSibling.classList.remove('active');
+                    }
+                });
+
+                // Toggle current FAQ item
+                if (isActive) {
+                    question.classList.remove('active');
+                    question.setAttribute('aria-expanded', 'false');
+                    answer.classList.remove('active');
+                } else {
+                    question.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                    answer.classList.add('active');
+                }
+            });
+        });
     </script>
 </body>
 
