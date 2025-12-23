@@ -11,6 +11,7 @@ body {
   color: #c9c4bc;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
@@ -304,5 +305,67 @@ body {
 
   .app-name {
     font-size: 20px;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 32px;
+  border-top: 1px solid #585858;
+  color: #979797;
+  font-size: 14px;
+  max-width: 450px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #c9c4bc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ec920a;
+  text-decoration: underline;
+}
+
+.footer-separator {
+  margin: 0 12px;
+  color: #585858;
+}
+
+.footer p {
+  margin: 0;
+  color: #979797;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 12px;
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer-separator {
+    margin: 0 8px;
   }
 }

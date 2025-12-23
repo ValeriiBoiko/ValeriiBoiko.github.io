@@ -48,7 +48,23 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="./support.html">Support</a>
+      <span class="footer-separator">|</span>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+      <span class="footer-separator">|</span>
+      <a href="./terms.html">Terms of Use</a>
+    </div>
+    <p>&copy; <span id="current-year"></span> TrainHub: Workout & Calorie. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
