@@ -265,12 +265,11 @@ body {
   }
 
   .store-btn {
-    width: 100%;
-    padding: 16px;
+    padding: 0;
   }
 
   .store-btn img {
-    height: 35px;
+    height: 40px;
   }
 
   .section-title {
