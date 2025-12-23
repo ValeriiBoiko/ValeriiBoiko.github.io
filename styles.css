@@ -99,7 +99,6 @@ body {
   background: #373737;
   border: 0 solid #585858;
   border-radius: 12px;
-  padding: 12px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -114,7 +113,7 @@ body {
 }
 
 .store-btn img {
-  height: 40px;
+  height: 45px;
   width: auto;
   object-fit: contain;
 }
