@@ -4,11 +4,75 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TrainHub: Workout & Calorie - Support</title>
+
+    <!-- Primary Meta Tags -->
+    <title>TrainHub Support - Help Center & FAQ | TrainHub: Workout & Calorie</title>
+    <meta name="title" content="TrainHub Support - Help Center & FAQ | TrainHub: Workout & Calorie" />
+    <meta name="description" content="Get help with TrainHub app. Find answers to frequently asked questions, contact support, and learn how to manage your account. Support available at support@thapp.pro" />
+    <meta name="keywords" content="TrainHub support, TrainHub help, TrainHub FAQ, TrainHub account deletion, TrainHub troubleshooting, fitness app support" />
+    <meta name="author" content="TrainHub" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thapp.pro/support.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thapp.pro/support.html" />
+    <meta property="og:title" content="TrainHub Support - Help Center & FAQ" />
+    <meta property="og:description" content="Get help with TrainHub app. Find answers to frequently asked questions and contact support." />
+    <meta property="og:image" content="https://thapp.pro/images/app-icon.png" />
+    <meta property="og:site_name" content="TrainHub" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://thapp.pro/support.html" />
+    <meta name="twitter:title" content="TrainHub Support - Help Center & FAQ" />
+    <meta name="twitter:description" content="Get help with TrainHub app. Find answers to frequently asked questions and contact support." />
+    <meta name="twitter:image" content="https://thapp.pro/images/app-icon.png" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./images/app-icon.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do I delete my TrainHub account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To delete your TrainHub account, follow these steps: 1) Open the TrainHub app and log in, 2) Navigate to Settings screen via your profile icon, 3) Scroll down to find the 'Delete Account' option, 4) Tap on 'Delete Account' and confirm your decision. Alternatively, you can email us at support@thapp.pro. Warning: Deleting your account will permanently remove all your data including workouts, progress tracking, body metrics, and any other information associated with your account. This action cannot be undone."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Structured Data - WebPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TrainHub Support",
+      "description": "Get help with TrainHub app. Find answers to frequently asked questions and contact support.",
+      "url": "https://thapp.pro/support.html",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "TrainHub",
+        "url": "https://thapp.pro/"
+      }
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -60,6 +124,7 @@
             border-radius: 20px;
         }
 
+        /* SEO: Ensure proper heading hierarchy */
         .header h1 {
             font-size: 32px;
             font-weight: 700;
@@ -390,6 +455,19 @@
                 padding-top: 24px;
             }
         }
+
+        /* SEO: Visually hidden but accessible to screen readers */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
     </style>
 </head>
 
@@ -398,23 +476,24 @@
         <!-- Header -->
         <header class="header">
             <div class="logo-container">
-                <img src="./images/app-icon.png" alt="TrainHub Logo" />
+                <img src="./images/app-icon.png" alt="TrainHub Logo - Fitness and Workout Tracking App" width="80" height="80" />
             </div>
             <h1>TrainHub Support</h1>
         </header>
 
         <!-- Intro Section -->
-        <section class="section">
+        <section class="section" aria-labelledby="intro-heading">
+            <h2 id="intro-heading" class="visually-hidden">Support Introduction</h2>
             <p>
                 Welcome to the TrainHub Support page. If you have any issues with the
                 app or need help, you can reach us anytime at
-                <a href="mailto:support@thapp.pro" class="email-link">support@thapp.pro</a>.
+                <a href="mailto:support@thapp.pro" class="email-link" rel="nofollow">support@thapp.pro</a>.
             </p>
         </section>
 
         <!-- Support Info Section -->
-        <section class="section">
-            <h2>Getting Help</h2>
+        <section class="section" aria-labelledby="help-heading">
+            <h2 id="help-heading">Getting Help</h2>
             <p>
                 Before reporting bugs, please make sure you're using the latest version of the app.
                 Updates often include important fixes and performance improvements.
@@ -430,21 +509,21 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
+        <section class="section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <button class="faq-question" aria-expanded="false" itemprop="name">
                         <span>How do I delete my account?</span>
-                        <span class="faq-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <span class="faq-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </span>
                     </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            <p>To delete your TrainHub account, follow these steps OR email us at <a href="mailto:support@thapp.pro" class="email-link">support@thapp.pro</a>:</p>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="faq-answer-content" itemprop="text">
+                            <p>To delete your TrainHub account, follow these steps OR email us at <a href="mailto:support@thapp.pro" class="email-link" rel="nofollow">support@thapp.pro</a>:</p>
                             <ol>
                                 <li>Open the TrainHub app on your device and log in to your account.</li>
                                 <li>Navigate to the Settings screen. You can usually find this by tapping on your profile icon in the app.</li>
@@ -463,12 +542,12 @@
         </section>
 
         <!-- Links Section -->
-        <section class="section">
-            <h2>Legal & Policies</h2>
-            <div class="links-grid">
+        <section class="section" aria-labelledby="legal-heading">
+            <h2 id="legal-heading">Legal & Policies</h2>
+            <nav class="links-grid" aria-label="Legal documents">
                 <a href="https://thapp.pro/privacy-policy" class="link-card">Privacy Policy</a>
                 <a href="https://thapp.pro/terms" class="link-card">Terms of Use</a>
-            </div>
+            </nav>
         </section>
 
         <!-- Footer -->
