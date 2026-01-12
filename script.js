@@ -11,7 +11,7 @@ function getPlatform() {
 
 // App store URLs
 const storeUrls = {
-  ios: "https://apps.apple.com/app/id123456789",
+  ios: "https://apple.co/3LEplAn",
   android: "https://play.google.com/store/apps/details?id=com.myapp",
 };
 
