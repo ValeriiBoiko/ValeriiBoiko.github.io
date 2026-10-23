@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "locale": "en_US",
+    "langName": "English",
+    "title": "TrainHub: Workout & Calorie Tracker for Trainers and Clients",
+    "description": "Log workouts, count calories and coach clients in one app. Build programs, track nutrition with AI and follow your progress. Free on the App Store.",
+    "keywords": "TrainHub, workout tracker, calorie counter, fitness app, personal trainer app, client management, workout planner, macro tracker, gym log"
+  },
+  "nav": {
+    "features": "Features",
+    "coaches": "For coaches",
+    "faq": "FAQ",
+    "download": "Get the app",
+    "language": "Language"
+  },
+  "langSuggest": {
+    "text": "This page is also available in English.",
+    "action": "Switch",
+    "dismiss": "Dismiss"
+  },
+  "badgeAlt": "Download on the App Store",
+  "screens": {
+    "dashboard": "TrainHub dashboard with today's calories, macros and next workout",
+    "workout": "Workout preview with exercises and sets",
+    "session": "Live workout session with rest timer and logged sets",
+    "nutrition": "Nutrition tracker with calories and macros for the day",
+    "agent": "Nutrition assistant logging a meal from a voice message",
+    "progress": "Body measurements and weight chart",
+    "highlights": "Highlights feed with friends' workouts and reactions",
+    "clients": "Coach's client list",
+    "story": "Instagram story template with workout stats over a photo",
+    "story2": "Instagram story template with a muscle chart"
+  },
+  "hero": {
+    "eyebrow": "Workout and calorie tracker",
+    "title": "Log workouts. Count calories. <span class=\"accent\">Coach clients.</span>",
+    "lead": "TrainHub brings training plans, nutrition and progress into one place, for you and for the people you coach.",
+    "free": "Free on iPhone",
+    "android": "Coming soon on Android"
+  },
+  "invite": {
+    "title": "Someone shared their TrainHub profile with you",
+    "text": "Open it in the app to connect, or download TrainHub first.",
+    "open": "Open in TrainHub",
+    "get": "Get the app",
+    "loading": "Opening TrainHub…"
+  },
+  "audience": {
+    "title": "One app, two ways to train",
+    "you": {
+      "label": "For you",
+      "title": "Train with a plan you can see working",
+      "points": [
+        "Follow your own plan or the one your coach assigns",
+        "Log sets, reps and rest without leaving the workout",
+        "Track meals, macros and water in seconds",
+        "Watch strength, weight and body measurements change"
+      ]
+    },
+    "coach": {
+      "label": "For coaches",
+      "title": "Run your clients from your pocket",
+      "points": [
+        "Manage all your clients, including ones who don't use the app",
+        "Build programs once and assign them in a tap",
+        "See clients' workouts, nutrition and progress photos",
+        "Choose exactly what each client shares with you"
+      ]
+    }
+  },
+  "features": {
+    "title": "Everything you need, nothing you don't",
+    "workout": {
+      "eyebrow": "Workouts",
+      "title": "A live session that keeps up with you",
+      "text": "Start a workout and TrainHub handles the rest: timers, previous results and new records as they happen.",
+      "points": [
+        "Rest timer and Live Activity on the Lock Screen",
+        "Personal record medals the moment you beat one",
+        "Muscle balance and 7-day training volume"
+      ]
+    },
+    "programs": {
+      "eyebrow": "Programs",
+      "title": "Plan weeks ahead, not just today",
+      "text": "Build multi-week programs, save templates and see everything on a calendar that swipes from day to day.",
+      "points": [
+        "Workout and program generators to get started fast",
+        "Import a plan from a file or pasted text",
+        "Calendar with day, month and list views"
+      ]
+    },
+    "nutrition": {
+      "eyebrow": "Nutrition",
+      "title": "Log a meal by saying what you ate",
+      "text": "Describe a meal with your voice, a photo or a few words, and the nutrition assistant fills in the numbers.",
+      "points": [
+        "Barcode scanner for packaged food",
+        "Calories, protein, fat, carbs and water goals",
+        "A recommended plan based on your body and goal"
+      ]
+    },
+    "progress": {
+      "eyebrow": "Progress",
+      "title": "Proof that it's working",
+      "text": "Keep body measurements, weight and progress photos side by side, and compare any two dates.",
+      "points": [
+        "Weight and calorie charts over time",
+        "Progress photos with before-and-after compare",
+        "Exercise history and best results"
+      ]
+    },
+    "social": {
+      "eyebrow": "Together",
+      "title": "Training is easier with friends",
+      "text": "See your friends' workouts in Highlights, react to them, and cheer each other on.",
+      "points": [
+        "Highlights from friends and clients",
+        "Emoji reactions on workouts and posts",
+        "Record medals on friends' posts"
+      ]
+    },
+    "share": {
+      "eyebrow": "Share",
+      "title": "Post your workout to Instagram in style",
+      "text": "Pick a story template, add your own photo, and send your workout to Instagram as a sticker you can move and resize.",
+      "points": [
+        "Five templates: workout stats, exercise list, a single exercise's sets and a muscle chart",
+        "Your photo or a branded background, with light or dark text",
+        "Lands in Instagram Stories ready to post"
+      ]
+    }
+  },
+  "integrations": {
+    "title": "Works with your iPhone",
+    "health": "Apple Health",
+    "healthText": "Sync workouts and body data",
+    "widgets": "Widgets",
+    "widgetsText": "Next workout and macros on your Home Screen",
+    "live": "Live Activities",
+    "liveText": "Rest timer on the Lock Screen"
+  },
+  "steps": {
+    "title": "Start in three steps",
+    "one": "Download TrainHub",
+    "oneText": "Free on the App Store.",
+    "two": "Tell us how you train",
+    "twoText": "On your own, as a coach, or both.",
+    "three": "Plan, log and grow",
+    "threeText": "Get a calorie and macro plan, then start your first workout."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is TrainHub free?",
+        "a": "Yes. TrainHub is free to download and use on the App Store."
+      },
+      {
+        "q": "Which devices does it run on?",
+        "a": "iPhone with iOS 15.6 or later, and Mac with Apple silicon (macOS 12.5 or later)."
+      },
+      {
+        "q": "Is there an Android version?",
+        "a": "It's on the way. The Android app is coming soon."
+      },
+      {
+        "q": "Which languages are supported?",
+        "a": "English, Polish, Ukrainian and Spanish."
+      },
+      {
+        "q": "Can my clients use it without the app?",
+        "a": "Yes. Coaches can add clients who don't use the app and still plan their workouts and track their progress."
+      },
+      {
+        "q": "How do I delete my account?",
+        "a": "Open Settings in the app and tap Delete Account, or email support@thapp.pro. See the <a href=\"/support.html\">Support page</a> for details."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Your next workout starts here",
+    "text": "Download TrainHub and set up your plan in a couple of minutes."
+  },
+  "footer": {
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved."
+  }
+}

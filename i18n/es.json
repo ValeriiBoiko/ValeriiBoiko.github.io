@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "locale": "es_ES",
+    "langName": "Español",
+    "title": "TrainHub: registro de entrenamientos y calorías",
+    "description": "Registra entrenamientos, cuenta calorías y dirige a tus clientes en una sola app. Crea programas, sigue tu nutrición con IA y tu progreso. Gratis en App Store.",
+    "keywords": "TrainHub, registro de entrenamientos, contador de calorías, app de fitness, app para entrenador personal, plan de entrenamiento, macros, gimnasio"
+  },
+  "nav": {
+    "features": "Funciones",
+    "coaches": "Para entrenadores",
+    "faq": "Preguntas",
+    "download": "Descargar",
+    "language": "Idioma"
+  },
+  "langSuggest": {
+    "text": "Esta página también está disponible en español.",
+    "action": "Cambiar",
+    "dismiss": "Cerrar"
+  },
+  "badgeAlt": "Descargar en la App Store",
+  "screens": {
+    "dashboard": "Panel de TrainHub con las calorías, los macros y el próximo entrenamiento de hoy",
+    "workout": "Vista previa de un entrenamiento con ejercicios y series",
+    "session": "Entrenamiento en directo con temporizador de descanso y series registradas",
+    "nutrition": "Seguimiento nutricional con calorías y macros del día",
+    "agent": "Asistente de nutrición registrando una comida a partir de un mensaje de voz",
+    "progress": "Medidas corporales y gráfico de peso",
+    "highlights": "Destacados con entrenamientos de amigos y reacciones",
+    "clients": "Lista de clientes del entrenador",
+    "story": "Plantilla de historia de Instagram con estadísticas del entrenamiento sobre una foto",
+    "story2": "Plantilla de historia de Instagram con un gráfico muscular"
+  },
+  "hero": {
+    "eyebrow": "Registro de entrenamientos y contador de calorías",
+    "title": "Registra entrenamientos. Cuenta calorías. <span class=\"accent\">Dirige a tus clientes.</span>",
+    "lead": "TrainHub reúne planes de entrenamiento, nutrición y progreso en un solo lugar, para ti y para las personas que entrenas.",
+    "free": "Gratis en iPhone",
+    "android": "Pronto en Android"
+  },
+  "invite": {
+    "title": "Alguien ha compartido contigo su perfil de TrainHub",
+    "text": "Ábrelo en la app para conectar, o descarga TrainHub primero.",
+    "open": "Abrir en TrainHub",
+    "get": "Descargar la app",
+    "loading": "Abriendo TrainHub…"
+  },
+  "audience": {
+    "title": "Una app, dos formas de entrenar",
+    "you": {
+      "label": "Para ti",
+      "title": "Entrena con un plan que ves funcionar",
+      "points": [
+        "Sigue tu propio plan o el que te asigne tu entrenador",
+        "Registra series, repeticiones y descansos sin salir del entrenamiento",
+        "Apunta comidas, macros y agua en segundos",
+        "Mira cómo cambian tu fuerza, tu peso y tus medidas"
+      ]
+    },
+    "coach": {
+      "label": "Para entrenadores",
+      "title": "Dirige a tus clientes desde el bolsillo",
+      "points": [
+        "Gestiona a tus clientes, incluidos los que no usan la app",
+        "Crea un programa una vez y asígnalo con un toque",
+        "Consulta sus entrenamientos, su nutrición y sus fotos de progreso",
+        "Elige exactamente qué comparte contigo cada cliente"
+      ]
+    }
+  },
+  "features": {
+    "title": "Todo lo que necesitas, nada que sobre",
+    "workout": {
+      "eyebrow": "Entrenamientos",
+      "title": "Un entrenamiento en directo que va a tu ritmo",
+      "text": "Empieza un entrenamiento y TrainHub se encarga del resto: temporizadores, resultados anteriores y nuevos récords al momento.",
+      "points": [
+        "Temporizador de descanso y Live Activity en la pantalla de bloqueo",
+        "Medallas de récord en cuanto superas uno",
+        "Equilibrio muscular y volumen de entrenamiento de 7 días"
+      ]
+    },
+    "programs": {
+      "eyebrow": "Programas",
+      "title": "Planifica semanas, no solo hoy",
+      "text": "Crea programas de varias semanas, guarda plantillas y tenlo todo en un calendario que pasa de un día a otro deslizando.",
+      "points": [
+        "Generadores de entrenamientos y programas para empezar rápido",
+        "Importa un plan desde un archivo o texto pegado",
+        "Calendario con vista de día, mes y lista"
+      ]
+    },
+    "nutrition": {
+      "eyebrow": "Nutrición",
+      "title": "Registra una comida contando lo que has comido",
+      "text": "Describe una comida con tu voz, una foto o unas palabras, y el asistente de nutrición rellena los números.",
+      "points": [
+        "Escáner de códigos de barras para productos envasados",
+        "Objetivos de calorías, proteínas, grasas, carbohidratos y agua",
+        "Un plan recomendado según tu cuerpo y tu objetivo"
+      ]
+    },
+    "progress": {
+      "eyebrow": "Progreso",
+      "title": "La prueba de que funciona",
+      "text": "Guarda medidas corporales, peso y fotos de progreso juntos, y compara dos fechas cualesquiera.",
+      "points": [
+        "Gráficos de peso y calorías a lo largo del tiempo",
+        "Fotos de progreso con comparación de antes y después",
+        "Historial de ejercicios y mejores marcas"
+      ]
+    },
+    "social": {
+      "eyebrow": "Juntos",
+      "title": "Entrenar con amigos es más fácil",
+      "text": "Mira los entrenamientos de tus amigos en Destacados, reacciona y anímense entre todos.",
+      "points": [
+        "Destacados de amigos y clientes",
+        "Reacciones con emoji en entrenamientos y publicaciones",
+        "Medallas de récord en las publicaciones de amigos"
+      ]
+    },
+    "share": {
+      "eyebrow": "Compartir",
+      "title": "Presume tu entrenamiento en Instagram",
+      "text": "Elige una plantilla de historia, añade tu propia foto y envía tu entrenamiento a Instagram como un sticker que puedes mover y escalar.",
+      "points": [
+        "Cinco plantillas: estadísticas del entrenamiento, lista de ejercicios, series de un ejercicio y gráfico muscular",
+        "Tu foto o un fondo de marca, con texto claro u oscuro",
+        "Llega a tus historias de Instagram lista para publicar"
+      ]
+    }
+  },
+  "integrations": {
+    "title": "Funciona con tu iPhone",
+    "health": "Apple Salud",
+    "healthText": "Sincroniza entrenamientos y datos corporales",
+    "widgets": "Widgets",
+    "widgetsText": "Próximo entrenamiento y macros en la pantalla de inicio",
+    "live": "Live Activities",
+    "liveText": "Temporizador de descanso en la pantalla de bloqueo"
+  },
+  "steps": {
+    "title": "Empieza en tres pasos",
+    "one": "Descarga TrainHub",
+    "oneText": "Gratis en la App Store.",
+    "two": "Cuéntanos cómo entrenas",
+    "twoText": "Por tu cuenta, como entrenador o ambas cosas.",
+    "three": "Planifica, registra y mejora",
+    "threeText": "Recibe un plan de calorías y macros, y empieza tu primer entrenamiento."
+  },
+  "faq": {
+    "title": "Preguntas",
+    "items": [
+      {
+        "q": "¿TrainHub es gratis?",
+        "a": "Sí. TrainHub se descarga y se usa gratis desde la App Store."
+      },
+      {
+        "q": "¿En qué dispositivos funciona?",
+        "a": "En iPhone con iOS 15.6 o posterior, y en Mac con chip de Apple (macOS 12.5 o posterior)."
+      },
+      {
+        "q": "¿Hay versión para Android?",
+        "a": "Está en camino. La app para Android llegará pronto."
+      },
+      {
+        "q": "¿Qué idiomas admite?",
+        "a": "Inglés, polaco, ucraniano y español."
+      },
+      {
+        "q": "¿Pueden mis clientes usarlo sin la app?",
+        "a": "Sí. Un entrenador puede añadir clientes que no usan la app y seguir planificando sus entrenamientos y su progreso."
+      },
+      {
+        "q": "¿Cómo elimino mi cuenta?",
+        "a": "Abre Ajustes en la app y toca Eliminar cuenta, o escribe a support@thapp.pro. Más detalles en la <a href=\"/support.html\">página de soporte</a>."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Tu próximo entrenamiento empieza aquí",
+    "text": "Descarga TrainHub y configura tu plan en un par de minutos."
+  },
+  "footer": {
+    "support": "Soporte",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "rights": "Todos los derechos reservados."
+  }
+}

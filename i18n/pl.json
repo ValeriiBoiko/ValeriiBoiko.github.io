@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "locale": "pl_PL",
+    "langName": "Polski",
+    "title": "TrainHub: dziennik treningowy i licznik kalorii dla trenerów",
+    "description": "Zapisuj treningi, licz kalorie i prowadź podopiecznych w jednej aplikacji. Twórz plany, śledź żywienie z AI i obserwuj postępy. Za darmo w App Store.",
+    "keywords": "TrainHub, dziennik treningowy, licznik kalorii, aplikacja fitness, aplikacja dla trenera personalnego, plan treningowy, makroskładniki, siłownia"
+  },
+  "nav": {
+    "features": "Funkcje",
+    "coaches": "Dla trenerów",
+    "faq": "FAQ",
+    "download": "Pobierz",
+    "language": "Język"
+  },
+  "langSuggest": {
+    "text": "Ta strona jest dostępna również po polsku.",
+    "action": "Przełącz",
+    "dismiss": "Zamknij"
+  },
+  "badgeAlt": "Pobierz z App Store",
+  "screens": {
+    "dashboard": "Pulpit TrainHub z dzisiejszymi kaloriami, makroskładnikami i kolejnym treningiem",
+    "workout": "Podgląd treningu z ćwiczeniami i seriami",
+    "session": "Trening na żywo z minutnikiem przerwy i zapisanymi seriami",
+    "nutrition": "Dziennik żywienia z kaloriami i makroskładnikami na dziś",
+    "agent": "Asystent żywieniowy zapisujący posiłek z wiadomości głosowej",
+    "progress": "Pomiary ciała i wykres wagi",
+    "highlights": "Wyróżnienia z treningami znajomych i reakcjami",
+    "clients": "Lista podopiecznych trenera",
+    "story": "Szablon relacji na Instagram ze statystykami treningu na zdjęciu",
+    "story2": "Szablon relacji na Instagram z wykresem mięśni"
+  },
+  "hero": {
+    "eyebrow": "Dziennik treningowy i licznik kalorii",
+    "title": "Zapisuj treningi. Licz kalorie. <span class=\"accent\">Prowadź podopiecznych.</span>",
+    "lead": "TrainHub łączy plany treningowe, żywienie i postępy w jednym miejscu, dla Ciebie i dla osób, które trenujesz.",
+    "free": "Za darmo na iPhone",
+    "android": "Wkrótce na Androida"
+  },
+  "invite": {
+    "title": "Ktoś udostępnił Ci swój profil TrainHub",
+    "text": "Otwórz go w aplikacji, aby się połączyć, lub najpierw pobierz TrainHub.",
+    "open": "Otwórz w TrainHub",
+    "get": "Pobierz aplikację",
+    "loading": "Otwieranie TrainHub…"
+  },
+  "audience": {
+    "title": "Jedna aplikacja, dwa sposoby trenowania",
+    "you": {
+      "label": "Dla Ciebie",
+      "title": "Trenuj według planu, który widać w wynikach",
+      "points": [
+        "Realizuj własny plan albo ten od trenera",
+        "Zapisuj serie, powtórzenia i przerwy w trakcie treningu",
+        "Notuj posiłki, makroskładniki i wodę w kilka sekund",
+        "Obserwuj, jak zmienia się siła, waga i wymiary"
+      ]
+    },
+    "coach": {
+      "label": "Dla trenerów",
+      "title": "Prowadź podopiecznych z telefonu",
+      "points": [
+        "Prowadź wszystkich podopiecznych, także tych, którzy nie korzystają z aplikacji",
+        "Stwórz plan raz i przypisz go jednym dotknięciem",
+        "Przeglądaj treningi, żywienie i zdjęcia postępów",
+        "Ustal, co dokładnie udostępnia Ci każdy podopieczny"
+      ]
+    }
+  },
+  "features": {
+    "title": "Wszystko, czego potrzebujesz, i nic ponad to",
+    "workout": {
+      "eyebrow": "Treningi",
+      "title": "Trening na żywo, który nadąża za Tobą",
+      "text": "Rozpocznij trening, a TrainHub zajmie się resztą: minutnikami, poprzednimi wynikami i nowymi rekordami na bieżąco.",
+      "points": [
+        "Minutnik przerwy i Live Activity na ekranie blokady",
+        "Medale za rekordy, gdy tylko je pobijesz",
+        "Balans mięśniowy i objętość treningowa z 7 dni"
+      ]
+    },
+    "programs": {
+      "eyebrow": "Plany treningowe",
+      "title": "Planuj tygodnie naprzód, nie tylko dziś",
+      "text": "Twórz wielotygodniowe plany, zapisuj szablony i miej wszystko w kalendarzu, w którym przesuwasz się między dniami.",
+      "points": [
+        "Generatory treningów i planów na szybki start",
+        "Import planu z pliku lub wklejonego tekstu",
+        "Kalendarz w widoku dnia, miesiąca i listy"
+      ]
+    },
+    "nutrition": {
+      "eyebrow": "Żywienie",
+      "title": "Zapisz posiłek jednym zdaniem",
+      "text": "Opisz posiłek głosem, zdjęciem lub kilkoma słowami, a asystent żywieniowy uzupełni wartości.",
+      "points": [
+        "Skaner kodów kreskowych dla produktów paczkowanych",
+        "Cele kalorii, białka, tłuszczów, węglowodanów i wody",
+        "Rekomendowany plan dopasowany do Twojego ciała i celu"
+      ]
+    },
+    "progress": {
+      "eyebrow": "Postępy",
+      "title": "Dowód, że to działa",
+      "text": "Trzymaj pomiary ciała, wagę i zdjęcia postępów w jednym miejscu i porównuj dowolne dwie daty.",
+      "points": [
+        "Wykresy wagi i kalorii w czasie",
+        "Zdjęcia postępów z porównaniem przed i po",
+        "Historia ćwiczeń i najlepsze wyniki"
+      ]
+    },
+    "social": {
+      "eyebrow": "Razem",
+      "title": "Ze znajomymi trenuje się łatwiej",
+      "text": "Oglądaj treningi znajomych w Wyróżnieniach, reaguj na nie i motywujcie się nawzajem.",
+      "points": [
+        "Wyróżnienia od znajomych i podopiecznych",
+        "Reakcje emoji na treningi i posty",
+        "Medale za rekordy w postach znajomych"
+      ]
+    },
+    "share": {
+      "eyebrow": "Udostępnianie",
+      "title": "Pochwal się treningiem na Instagramie",
+      "text": "Wybierz szablon relacji, dodaj własne zdjęcie i wyślij trening na Instagram jako naklejkę, którą możesz przesuwać i skalować.",
+      "points": [
+        "Pięć szablonów: statystyki treningu, lista ćwiczeń, serie jednego ćwiczenia i wykres mięśni",
+        "Twoje zdjęcie lub firmowe tło, z jasnym lub ciemnym tekstem",
+        "Trafia do relacji na Instagramie gotowe do publikacji"
+      ]
+    }
+  },
+  "integrations": {
+    "title": "Działa z Twoim iPhonem",
+    "health": "Apple Zdrowie",
+    "healthText": "Synchronizacja treningów i danych ciała",
+    "widgets": "Widżety",
+    "widgetsText": "Kolejny trening i makro na ekranie początkowym",
+    "live": "Live Activities",
+    "liveText": "Minutnik przerwy na ekranie blokady"
+  },
+  "steps": {
+    "title": "Zacznij w trzech krokach",
+    "one": "Pobierz TrainHub",
+    "oneText": "Za darmo w App Store.",
+    "two": "Powiedz, jak trenujesz",
+    "twoText": "Samodzielnie, jako trener albo jedno i drugie.",
+    "three": "Planuj, zapisuj, rozwijaj się",
+    "threeText": "Otrzymaj plan kalorii i makroskładników, a potem zacznij pierwszy trening."
+  },
+  "faq": {
+    "title": "Pytania",
+    "items": [
+      {
+        "q": "Czy TrainHub jest darmowy?",
+        "a": "Tak. TrainHub można pobrać i używać za darmo z App Store."
+      },
+      {
+        "q": "Na jakich urządzeniach działa?",
+        "a": "Na iPhonie z iOS 15.6 lub nowszym oraz na Macu z procesorem Apple (macOS 12.5 lub nowszy)."
+      },
+      {
+        "q": "Czy jest wersja na Androida?",
+        "a": "Jest w drodze. Aplikacja na Androida pojawi się wkrótce."
+      },
+      {
+        "q": "Jakie języki są dostępne?",
+        "a": "Angielski, polski, ukraiński i hiszpański."
+      },
+      {
+        "q": "Czy moi podopieczni mogą korzystać bez aplikacji?",
+        "a": "Tak. Trener może dodać podopiecznych, którzy nie używają aplikacji, i nadal planować ich treningi oraz śledzić postępy."
+      },
+      {
+        "q": "Jak usunąć konto?",
+        "a": "Otwórz Ustawienia w aplikacji i wybierz Usuń konto albo napisz na support@thapp.pro. Szczegóły znajdziesz na <a href=\"/support.html\">stronie pomocy</a>."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Twój kolejny trening zaczyna się tutaj",
+    "text": "Pobierz TrainHub i skonfiguruj swój plan w kilka minut."
+  },
+  "footer": {
+    "support": "Pomoc",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania",
+    "rights": "Wszelkie prawa zastrzeżone."
+  }
+}

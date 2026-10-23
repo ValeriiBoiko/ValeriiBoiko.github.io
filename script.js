@@ -9,10 +9,10 @@ function getPlatform() {
   return "unknown";
 }
 
-// App store URLs
+// App store URLs. Android is null until the Play listing (com.vboiko.trainhub) is live.
 const storeUrls = {
   ios: "https://apple.co/3LEplAn",
-  android: "https://play.google.com/store/apps/details?id=com.myapp",
+  android: null,
 };
 
 // Get URL parameters
@@ -29,7 +29,7 @@ function buildDeepLink() {
   let deepLink = "trainhub://";
 
   if (params.userId) {
-    deepLink += `user/${params.userId}`;
+    deepLink += `user/${encodeURIComponent(params.userId)}`;
   }
 
   return deepLink;
@@ -37,51 +37,128 @@ function buildDeepLink() {
 
 // Open app function
 function openApp() {
-  const platform = getPlatform();
   const loading = document.getElementById("loading");
-  const deepLinkUrl = buildDeepLink();
-
-  // Show loading state
-  loading.classList.add("show");
-
-  // Open deep link immediately
-
-  window.location.href = deepLinkUrl;
-
-  // Set timeout for fallback to app store after 2500ms
+  if (loading) {
+    loading.classList.add("show");
+  }
+  window.location.href = buildDeepLink();
 }
 
 // Download from specific store function
 function downloadFromStore(platform) {
-  if (platform === "ios" || platform === "android") {
-    window.location.href = storeUrls[platform];
-  } else {
-    // Fallback to iOS if unknown platform
-    window.location.href = storeUrls.ios;
+  window.location.href = storeUrls[platform] || storeUrls.ios;
+}
+
+function readStorage(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (e) {
+    return null;
   }
 }
 
-// Add some interactive effects
+function writeStorage(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (e) {
+    // Storage can be blocked; the banner just shows again next time.
+  }
+}
+
+// Shared profile links (?u=<userId>) show the invite card at the top of the page.
+function setupInvite() {
+  const card = document.getElementById("invite-card");
+  if (!card || !getUrlParams().userId) {
+    return;
+  }
+  card.hidden = false;
+  document.getElementById("open-app").addEventListener("click", openApp);
+}
+
+// Suggest the visitor's browser language once; never redirect automatically.
+function setupLanguageSuggestion() {
+  const dataEl = document.getElementById("lang-data");
+  const banner = document.getElementById("lang-suggest");
+  if (!dataEl || !banner) {
+    return;
+  }
+
+  const data = JSON.parse(dataEl.textContent);
+  const storageKey = "th-lang-choice";
+
+  document.querySelectorAll("a[data-lang]").forEach((link) => {
+    link.addEventListener("click", () => writeStorage(storageKey, link.dataset.lang));
+  });
+
+  if (readStorage(storageKey)) {
+    return;
+  }
+
+  const preferred = (navigator.languages || [navigator.language])
+    .map((lang) => (lang || "").slice(0, 2).toLowerCase())
+    .find((lang) => data.langs[lang]);
+  if (!preferred || preferred === data.current) {
+    return;
+  }
+
+  const target = data.langs[preferred];
+  const link = document.getElementById("lang-suggest-link");
+  document.getElementById("lang-suggest-text").textContent = target.text;
+  link.textContent = target.action;
+  link.href = target.href + window.location.search;
+  link.hreflang = preferred;
+  link.lang = preferred;
+  link.addEventListener("click", () => writeStorage(storageKey, preferred));
+
+  const close = document.getElementById("lang-suggest-close");
+  close.setAttribute("aria-label", target.dismiss);
+  close.addEventListener("click", () => {
+    banner.hidden = true;
+    writeStorage(storageKey, data.current);
+  });
+
+  banner.lang = preferred;
+  banner.hidden = false;
+}
+
+// Keep ?u= when switching language, so a shared link survives the switch.
+function keepQueryOnLanguageLinks() {
+  if (!window.location.search) {
+    return;
+  }
+  document.querySelectorAll("a[data-lang]").forEach((link) => {
+    link.href = link.getAttribute("href") + window.location.search;
+  });
+}
+
+function setupReveal() {
+  const items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((item) => item.classList.add("visible"));
+    return;
+  }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px" }
+  );
+  items.forEach((item) => observer.observe(item));
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Add hover effects to buttons
-  const buttons = document.querySelectorAll(".btn, .store-btn");
-  buttons.forEach((button) => {
-    button.addEventListener("mouseenter", function () {
-      this.style.transform = "translateY(-2px)";
-    });
+  const year = document.getElementById("current-year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 
-    button.addEventListener("mouseleave", function () {
-      this.style.transform = "translateY(0)";
-    });
-  });
-
-  // Add click animation
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.style.transform = "translateY(0) scale(0.98)";
-      setTimeout(() => {
-        this.style.transform = "translateY(-2px) scale(1)";
-      }, 100);
-    });
-  });
+  setupInvite();
+  keepQueryOnLanguageLinks();
+  setupLanguageSuggestion();
+  setupReveal();
 });

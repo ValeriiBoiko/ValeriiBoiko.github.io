@@ -5,8 +5,12 @@
       {
         "appID": "ZQ6Q8H2H2X.com.vboiko.trainhub",
         "paths": [
+          "NOT /terms.html",
+          "NOT /privacy-policy.html",
+          "NOT /support.html",
           "NOT /terms",
           "NOT /privacy-policy",
+          "NOT /support",
           "*"
         ]
       }

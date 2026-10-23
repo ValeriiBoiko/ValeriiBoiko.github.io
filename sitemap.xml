@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://thapp.pro/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thapp.pro/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://thapp.pro/pl/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://thapp.pro/uk/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thapp.pro/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thapp.pro/" />
+  </url>
+  <url>
+    <loc>https://thapp.pro/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thapp.pro/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://thapp.pro/pl/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://thapp.pro/uk/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thapp.pro/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thapp.pro/" />
+  </url>
+  <url>
+    <loc>https://thapp.pro/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thapp.pro/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://thapp.pro/pl/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://thapp.pro/uk/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thapp.pro/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thapp.pro/" />
+  </url>
+  <url>
+    <loc>https://thapp.pro/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thapp.pro/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://thapp.pro/pl/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://thapp.pro/uk/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://thapp.pro/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thapp.pro/" />
+  </url>
+  <url>
+    <loc>https://thapp.pro/support.html</loc>
+  </url>
+  <url>
+    <loc>https://thapp.pro/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://thapp.pro/terms.html</loc>
+  </url>
+</urlset>
