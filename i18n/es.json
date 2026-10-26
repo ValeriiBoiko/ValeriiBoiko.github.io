@@ -3,7 +3,7 @@
     "locale": "es_ES",
     "langName": "Español",
     "title": "TrainHub: registro de entrenamientos y calorías",
-    "description": "Registra entrenamientos, cuenta calorías y dirige a tus clientes en una sola app. Crea programas, sigue tu nutrición con IA y tu progreso. Gratis en App Store.",
+    "description": "Registra entrenamientos, cuenta calorías y dirige a tus clientes en una sola app. Crea programas, sigue tu nutrición con IA y tu progreso. Gratis en App Store y Google Play.",
     "keywords": "TrainHub, registro de entrenamientos, contador de calorías, app de fitness, app para entrenador personal, plan de entrenamiento, macros, gimnasio"
   },
   "nav": {
@@ -18,7 +18,10 @@
     "action": "Cambiar",
     "dismiss": "Cerrar"
   },
-  "badgeAlt": "Descargar en la App Store",
+  "badges": {
+    "appStore": "Descargar en la App Store",
+    "googlePlay": "Disponible en Google Play"
+  },
   "screens": {
     "dashboard": "Panel de TrainHub con las calorías, los macros y el próximo entrenamiento de hoy",
     "workout": "Vista previa de un entrenamiento con ejercicios y series",
@@ -35,8 +38,7 @@
     "eyebrow": "Registro de entrenamientos y contador de calorías",
     "title": "Registra entrenamientos. Cuenta calorías. <span class=\"accent\">Dirige a tus clientes.</span>",
     "lead": "TrainHub reúne planes de entrenamiento, nutrición y progreso en un solo lugar, para ti y para las personas que entrenas.",
-    "free": "Gratis en iPhone",
-    "android": "Pronto en Android"
+    "free": "Gratis en iPhone y Android"
   },
   "invite": {
     "title": "Alguien ha compartido contigo su perfil de TrainHub",
@@ -143,7 +145,7 @@
   "steps": {
     "title": "Empieza en tres pasos",
     "one": "Descarga TrainHub",
-    "oneText": "Gratis en la App Store.",
+    "oneText": "Gratis en la App Store y Google Play.",
     "two": "Cuéntanos cómo entrenas",
     "twoText": "Por tu cuenta, como entrenador o ambas cosas.",
     "three": "Planifica, registra y mejora",
@@ -154,15 +156,15 @@
     "items": [
       {
         "q": "¿TrainHub es gratis?",
-        "a": "Sí. TrainHub se descarga y se usa gratis desde la App Store."
+        "a": "Sí. TrainHub se descarga y se usa gratis desde la App Store y Google Play."
       },
       {
         "q": "¿En qué dispositivos funciona?",
-        "a": "En iPhone con iOS 15.6 o posterior, y en Mac con chip de Apple (macOS 12.5 o posterior)."
+        "a": "En iPhone con iOS 15.6 o posterior, en Mac con chip de Apple (macOS 12.5 o posterior) y en teléfonos con Android 7.0 o posterior."
       },
       {
         "q": "¿Hay versión para Android?",
-        "a": "Está en camino. La app para Android llegará pronto."
+        "a": "Sí. Descarga TrainHub en <a href=\"https://play.google.com/store/apps/details?id=com.vboiko.trainhub\">Google Play</a>."
       },
       {
         "q": "¿Qué idiomas admite?",

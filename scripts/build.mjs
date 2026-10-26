@@ -9,6 +9,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://thapp.pro';
 const DEFAULT_LANG = 'en';
 const LANGS = ['en', 'pl', 'uk', 'es'];
+const APP_STORE_URL = 'https://apps.apple.com/app/id6748391178';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.vboiko.trainhub';
 
 // Phone screenshots, keyed by the name used in {{@screen:name}}.
 const SCREENS = {
@@ -68,12 +70,12 @@ const renderJsonLd = (lang, dict) => {
       '@context': 'https://schema.org',
       '@type': 'MobileApplication',
       name: 'TrainHub: Workout & Calorie',
-      operatingSystem: 'iOS 15.6 or later',
+      operatingSystem: 'iOS 15.6 or later, Android 7.0 or later',
       applicationCategory: 'HealthApplication',
       inLanguage: lang,
       description: dict.meta.description,
       url: urlFor(lang),
-      downloadUrl: 'https://apps.apple.com/app/id6748391178',
+      downloadUrl: [APP_STORE_URL, PLAY_URL],
       image: `${SITE}/images/app-icon.png`,
       screenshot: `${SITE}/images/og-image.png`,
       offers: {'@type': 'Offer', price: '0', priceCurrency: 'USD'},
@@ -86,7 +88,7 @@ const renderJsonLd = (lang, dict) => {
       url: `${SITE}/`,
       logo: `${SITE}/images/app-icon.png`,
       email: 'support@thapp.pro',
-      sameAs: ['https://apps.apple.com/app/id6748391178'],
+      sameAs: [APP_STORE_URL, PLAY_URL],
     },
     {
       '@context': 'https://schema.org',
@@ -167,7 +169,7 @@ const renderComputed = (name, lang, dict) => {
   }
 };
 
-const META_KEYS = /^meta\.|^badgeAlt$/;
+const META_KEYS = /^meta\.|^badges\./;
 
 const render = lang => {
   const dict = dicts[lang];

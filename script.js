@@ -9,10 +9,10 @@ function getPlatform() {
   return "unknown";
 }
 
-// App store URLs. Android is null until the Play listing (com.vboiko.trainhub) is live.
+// App store URLs
 const storeUrls = {
   ios: "https://apple.co/3LEplAn",
-  android: null,
+  android: "https://play.google.com/store/apps/details?id=com.vboiko.trainhub",
 };
 
 // Get URL parameters
@@ -63,6 +63,17 @@ function writeStorage(key, value) {
   } catch (e) {
     // Storage can be blocked; the banner just shows again next time.
   }
+}
+
+// "Get the app" buttons default to the App Store; send Android visitors to Google Play.
+function setupStoreButtons() {
+  if (getPlatform() !== "android") {
+    return;
+  }
+  document.querySelectorAll('a.btn[data-store="ios"]').forEach((link) => {
+    link.href = storeUrls.android;
+    link.dataset.store = "android";
+  });
 }
 
 // Shared profile links (?u=<userId>) show the invite card at the top of the page.
@@ -157,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
     year.textContent = new Date().getFullYear();
   }
 
+  setupStoreButtons();
   setupInvite();
   keepQueryOnLanguageLinks();
   setupLanguageSuggestion();

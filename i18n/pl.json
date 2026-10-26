@@ -3,7 +3,7 @@
     "locale": "pl_PL",
     "langName": "Polski",
     "title": "TrainHub: dziennik treningowy i licznik kalorii dla trenerów",
-    "description": "Zapisuj treningi, licz kalorie i prowadź podopiecznych w jednej aplikacji. Twórz plany, śledź żywienie z AI i obserwuj postępy. Za darmo w App Store.",
+    "description": "Zapisuj treningi, licz kalorie i prowadź podopiecznych w jednej aplikacji. Twórz plany, śledź żywienie z AI i obserwuj postępy. Za darmo w App Store i Google Play.",
     "keywords": "TrainHub, dziennik treningowy, licznik kalorii, aplikacja fitness, aplikacja dla trenera personalnego, plan treningowy, makroskładniki, siłownia"
   },
   "nav": {
@@ -18,7 +18,10 @@
     "action": "Przełącz",
     "dismiss": "Zamknij"
   },
-  "badgeAlt": "Pobierz z App Store",
+  "badges": {
+    "appStore": "Pobierz z App Store",
+    "googlePlay": "Pobierz z Google Play"
+  },
   "screens": {
     "dashboard": "Pulpit TrainHub z dzisiejszymi kaloriami, makroskładnikami i kolejnym treningiem",
     "workout": "Podgląd treningu z ćwiczeniami i seriami",
@@ -35,8 +38,7 @@
     "eyebrow": "Dziennik treningowy i licznik kalorii",
     "title": "Zapisuj treningi. Licz kalorie. <span class=\"accent\">Prowadź podopiecznych.</span>",
     "lead": "TrainHub łączy plany treningowe, żywienie i postępy w jednym miejscu, dla Ciebie i dla osób, które trenujesz.",
-    "free": "Za darmo na iPhone",
-    "android": "Wkrótce na Androida"
+    "free": "Za darmo na iPhone i Androida"
   },
   "invite": {
     "title": "Ktoś udostępnił Ci swój profil TrainHub",
@@ -143,7 +145,7 @@
   "steps": {
     "title": "Zacznij w trzech krokach",
     "one": "Pobierz TrainHub",
-    "oneText": "Za darmo w App Store.",
+    "oneText": "Za darmo w App Store i Google Play.",
     "two": "Powiedz, jak trenujesz",
     "twoText": "Samodzielnie, jako trener albo jedno i drugie.",
     "three": "Planuj, zapisuj, rozwijaj się",
@@ -154,15 +156,15 @@
     "items": [
       {
         "q": "Czy TrainHub jest darmowy?",
-        "a": "Tak. TrainHub można pobrać i używać za darmo z App Store."
+        "a": "Tak. TrainHub można pobrać i używać za darmo z App Store i Google Play."
       },
       {
         "q": "Na jakich urządzeniach działa?",
-        "a": "Na iPhonie z iOS 15.6 lub nowszym oraz na Macu z procesorem Apple (macOS 12.5 lub nowszy)."
+        "a": "Na iPhonie z iOS 15.6 lub nowszym, na Macu z procesorem Apple (macOS 12.5 lub nowszy) oraz na telefonach z Androidem 7.0 lub nowszym."
       },
       {
         "q": "Czy jest wersja na Androida?",
-        "a": "Jest w drodze. Aplikacja na Androida pojawi się wkrótce."
+        "a": "Tak. Pobierz TrainHub z <a href=\"https://play.google.com/store/apps/details?id=com.vboiko.trainhub\">Google Play</a>."
       },
       {
         "q": "Jakie języki są dostępne?",
